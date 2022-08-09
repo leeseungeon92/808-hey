@@ -2,7 +2,7 @@
 const mysql = require('mysql');
 const moment = require('moment'); // 날짜 포멧을 위한 모듈
 
-var connection = mysql.createConnection({
+var connection = mysql.createPool({
     host : 'us-cdbr-east-05.cleardb.net',
     user : 'bcb044d7c6380d',
     password : '42c66e7e',
